@@ -23,7 +23,7 @@ function parseQuery(query) {
 document.write('\
 <header>\
   <div class="container header">\
-    <div class="ftheader text"><a href='+params["prefix"]+'#home><img style="width:180px" src="images/logo.png" /></a></div>\
+    <div class="ftheader text"><a href='+params["prefix"]+'#home><img style="width:180px" src="images/Logo.png" /></a></div>\
     <div class="ftsubheader text talk"><a href='+params["prefix"]+'#photo>Photo Gallery</a></div>\
     <div class="ftsubheader text teaching"><a href='+params["prefix"]+'#teaching>Teaching</a></div>\
     <div class="ftsubheader text group"><a href='+params["prefix"]+'#people>People</a></div>\
