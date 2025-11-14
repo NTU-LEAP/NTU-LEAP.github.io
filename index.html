@@ -22,8 +22,6 @@
       font-size: 16px;
     }
 
-    /* 页面主体容器的最大宽度可在 main.css 控制，这里只负责间距 */
-
     /* 一级标题：Research / People / Teaching / Photo 等 */
     .content h1 {
       margin-top: 2.0em;
@@ -72,6 +70,41 @@
       margin-top: 0.6em;
       margin-bottom: 0.6em;
     }
+
+    /* 首页 heading 区域整体：头像左，右侧信息列 */
+    .content.heading {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    /* 头像右侧空一点 */
+    .content.heading .img {
+      margin-right: 24px;
+    }
+
+    /* 右侧整体占满剩余空间 */
+    .content.heading .info-wrapper {
+      flex: 1;
+    }
+
+    /* 名字+职务区块与下方 Related Links 间距稍微紧一点 */
+    .content.heading .info {
+      margin-bottom: 0.4em;
+    }
+
+    /* 首页里的 Related Links 标题更紧凑一些 */
+    .content.heading .related-links .title {
+      margin-top: 8px;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    /* Related Links 列表紧凑一些 */
+    .content.heading .related-links ul {
+      list-style-type: square;
+      margin: 0;
+      padding-left: 1.2em;
+    }
   </style>
 
   <!-- JS -->
@@ -92,49 +125,43 @@
           <img class="img_responsive" src="images/Head.png" alt="Photo">
         </div>
 
-        <div class="text info">
-          <h1>Assoc Prof Yi Tang</h1>
-          <p>
-            <div>Associate Chair (Graduate Studies)</div>
-            <div>Director of Laboratory for Electrification</div>
-            <div>&amp; Advanced Power Conversion</div>
-            <div>EEE, NTU</div>
+        <!-- 右侧整体包一层，方便布局 -->
+        <div class="info-wrapper">
 
-            <div style="margin-top: 1em;">Office:
-              <a href="https://maps.ntu.edu.sg/#/ntu/d386ffa80e4e46f286d17f08/poi/search">S2 B2A 07</a>
-            </div>
-            <div>Email: yitang@ntu.edu.sg</div>
-          </p>
-          <p>
-            <span><a href="https://scholar.google.com/citations?user=xehFzM8AAAAJ">Google Scholar</a></span> /
-            <span><a href="https://orcid.org/0000-0001-8725-1336">ORCID</a></span> /
-            <span><a href="https://dr.ntu.edu.sg/entities/person/Tang-Yi">NTU Profiles</a></span>
-          </p>
-        </div>
+          <!-- 上半部分：姓名 + 职务 + 学术链接 -->
+          <div class="text info">
+            <h1>Assoc Prof Yi Tang</h1>
+            <p>
+              <div>Associate Chair (Graduate Studies)</div>
+              <div>Director of Laboratory for Electrification</div>
+              <div>&amp; Advanced Power Conversion</div>
+              <div>EEE, NTU</div>
 
-        <div class="text">
-          <div class="title">Related Links</div>
-          <ul style="list-style-type: square;">
-            <li><a href="https://www.ntu.edu.sg/">Nanyang Technological University (NTU)</a></li>
-            <li><a href="https://www.ntu.edu.sg/eee/">School of Electrical and Electronic Engineering (EEE)</a></li>
-            <li><a href="https://www.ieee-pels.org/">IEEE Power Electronics Society (PELS)</a></li>
-          </ul>
-        </div>
+              <div style="margin-top: 1em;">
+                Office:
+                <a href="https://maps.ntu.edu.sg/#/ntu/d386ffa80e4e46f286d17f08/poi/search">S2 B2A 07</a>
+              </div>
+              <div>Email: yitang@ntu.edu.sg</div>
+            </p>
+            <p>
+              <span><a href="https://scholar.google.com/citations?user=xehFzM8AAAAJ">Google Scholar</a></span> /
+              <span><a href="https://orcid.org/0000-0001-8725-1336">ORCID</a></span> /
+              <span><a href="https://dr.ntu.edu.sg/entities/person/Tang-Yi">NTU Profiles</a></span>
+            </p>
+          </div>
 
-        <div class="text">
-          <p>
-            Dr. Yi Tang received the B.Eng. Degree in electrical engineering from Wuhan University, Wuhan, China, in 2007 and the M.Sc. and Ph.D. degrees in power engineering from the School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore, in 2008 and 2011, respectively.
-          </p>
+          <!-- 下半部分：Related Links 仍然在右侧，间距更紧 -->
+          <div class="text related-links">
+            <div class="title">Related Links</div>
+            <ul>
+              <li><a href="https://www.ntu.edu.sg/">Nanyang Technological University (NTU)</a></li>
+              <li><a href="https://www.ntu.edu.sg/eee/">School of Electrical and Electronic Engineering (EEE)</a></li>
+              <li><a href="https://www.ieee-pels.org/">IEEE Power Electronics Society (PELS)</a></li>
+            </ul>
+          </div>
 
-          <p>
-            From 2011 to 2013, he was a Senior Application Engineer with Infineon Technologies Asia Pacific, Singapore. From 2013 to 2015, he was a Postdoctoral Research Fellow with Aalborg University, Aalborg, Denmark. Since March 2015, he has been with Nanyang Technological University, Singapore, where he is now a tenured Associate Professor. He is the Cluster Director of the advanced power electronics research program at the Energy Research Institute @NTU (ERI@N).
-          </p>
-
-          <p>
-            Dr. Tang received the Infineon Top Inventor Award in 2012, the Early Career Teaching Excellence Award in 2017, and multiple IEEE Prize Paper Awards. He serves as an Associate Editor for the IEEE Transactions on Power Electronics (TPEL) and the IEEE Journal of Emerging and Selected Topics in Power Electronics (JESTPE).
-          </p>
-        </div>
-      </div>
+        </div> <!-- info-wrapper -->
+      </div> <!-- home -->
 
       <!-- Research -->
       <div class="content research anchor" id="research">
