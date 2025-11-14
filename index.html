@@ -24,9 +24,11 @@
 
     /* 一级标题：Research / People / Teaching / Photo 等（上间距减半） */
     .content h1 {
-      margin-top: 1.0em;   /* 原来 2.0em，减半 */
+      margin-top: 1.0em;
       margin-bottom: 0.6em;
       line-height: 1.2;
+      padding-bottom: 0.3em;          /* 让线和文字有点间距 */
+      border-bottom: 1px solid #ccc;   /* 灰色分隔线 */
     }
 
     /* 二级标题：Research 中的三块、People 里各小节等 */
@@ -81,11 +83,11 @@
 
     /* 左侧头像栏 */
     .heading-photo {
-      flex: 0 0 180px;
+      flex: 0 0 220px;
     }
 
     .heading-photo img {
-      width: 180px;
+      width: 220px;
       border-radius: 50%;
       display: block;
     }
@@ -97,7 +99,7 @@
 
     .heading-main h1 {
       margin: 0 0 0.3em;
-      font-size: 40px;
+      font-size: 32px;
       line-height: 1.1;
     }
 
