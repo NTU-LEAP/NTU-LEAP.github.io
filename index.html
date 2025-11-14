@@ -47,7 +47,16 @@
 
     /* ⭐⭐⭐ 关键：增加列表与下一标题之间的距离 ⭐⭐⭐ */
     .content .text ul {
-      margin-bottom: 1.4em;   /* 你可以改成 1.8em 看起来更舒服 */
+      margin-bottom: 1.4em;  
+    }
+
+    .footer {
+      margin-top: 3em;            /* 与上方内容留点空间 */
+      padding: 1.5em 0;           /* 上下内边距 */
+      text-align: center;         /* 居中 */
+      font-size: 14px;            /* 字体稍小 */
+      color: #777;                /* 柔和灰色 */
+      border-top: 1px solid #ccc; /* 上方灰线分隔 */
     }
   </style>
 
@@ -294,6 +303,11 @@
     <script>showPubs(0);</script>
     <script>var scroll = new SmoothScroll('a[href*="#"]', { speed: 1000 });</script>
 
+
+    <div class="footer">
+      Copyright (C) LEAP@NTU All Rights Reserved.
+    </div>
+    
 </body>
 
 </html>
