@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -10,410 +11,248 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/Leap.png" type="image/png">
 
-  <!-- External CSS -->
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- Layout & spacing tuning -->
-  <style>
-    /* 全局正文行距与字号 */
-    body {
-      line-height: 1.6;
-      font-size: 16px;
-    }
-
-    /* 一级标题：Research / People / Teaching / Photo 等（上间距减半） */
-    .content h1 {
-      margin-top: 1.0em;
-      margin-bottom: 0.6em;
-      line-height: 1.2;
-      padding-bottom: 0.3em;          /* 让线和文字有点间距 */
-      border-bottom: 1px solid #ccc;   /* 灰色分隔线 */
-    }
-
-    /* 二级标题：Research 中的三块、People 里各小节等 */
-    .title h2,
-    .content h2 {
-      margin: 1.4em 0 0.4em;
-      font-size: 26px;
-      line-height: 1.25;
-    }
-
-    /* 通用标题容器（包括部分二级标题） */
-    .title {
-      margin-top: 30px;
-      margin-bottom: 5px;
-      font-weight: 600;
-    }
-
-    /* 文本块整体与其它模块的间距 */
-    .content .text {
-      margin-bottom: 1.8em;
-    }
-
-    /* 段落间距：让每段之间有呼吸感 */
-    .content .text p {
-      margin: 0 0 0.8em;
-    }
-
-    /* 列表整体与上下内容的距离 + 左缩进 */
-    .content .text ul {
-      margin: 0.2em 0 1.2em 1.5em;
-      padding: 0;
-    }
-
-    /* 每一个 li 之间稍微拉开一点 */
-    .content .text li {
-      margin-bottom: 0.25em;
-    }
-
-    /* Research 部分里的图片块，让上下更自然 */
-    .content .text .front {
-      margin-top: 0.6em;
-      margin-bottom: 0.6em;
-    }
-
-    /* === Heading 部分三栏布局（头像 / 简介 / Related Links）=== */
-    .content.heading {
-      display: flex;
-      align-items: flex-start;
-      gap: 48px;          /* 三栏之间水平间距 */
-      margin-top: 1em;
-    }
-
-    /* 左侧头像栏 */
-    .heading-photo {
-      flex: 0 0 220px;
-    }
-
-    .heading-photo img {
-      width: 220px;
-      border-radius: 50%;
-      display: block;
-    }
-
-    /* 中间简介栏 */
-    .heading-main {
-      flex: 1;
-    }
-
-    .heading-main h1 {
-      margin: 0 0 0.3em;
-      font-size: 32px;
-      line-height: 1.1;
-    }
-
-    .heading-main .position-block div {
-      margin: 0;
-    }
-
-    .heading-main .contact-block {
-      margin-top: 1em;
-    }
-
-    .heading-main .profile-links {
-      margin-top: 1em;
-    }
-
-    /* 右侧 Related Links 栏 */
-    .heading-links {
-      flex: 0 0 260px;
-      margin-top: 0.5em;
-    }
-
-    .heading-links-title {
-      font-size: 22px;
-      margin: 0 0 0.4em;
-    }
-
-    .heading-links ul {
-      list-style-type: square;
-      padding-left: 1.2em;
-      margin: 0;
-    }
-
-    .heading-links li {
-      margin-bottom: 0.3em;
-    }
+  <style>.title {
+          margin-top: 30px;   /* 调整空白大小 */
+  }
   </style>
 
-  <!-- JS -->
   <script src="js/main.js"></script>
   <script src="js/scroll.js"></script>
-  <script src="js/head.js"></script>
-  <script src="js/header.js"></script>
+  <script src="js/head.js?prefix="></script>
+  <script src="js/header.js?prefix="></script>
 </head>
 
-<body>
 
-  <div class="outercontainer">
-    <div class="container body">
+  <body>
 
-      <!-- Home / Heading -->
-      <div class="content heading anchor" id="home">
+    <div class="outercontainer">
+      
+      
+      <div class="container body">
 
-        <!-- 左：头像 -->
-        <div class="heading-photo">
-          <img class="img_responsive" src="images/Head.png" alt="Photo">
-        </div>
+        <div class="content heading anchor" id="home">
+          <div class="img">
+            <img class="img_responsive" src="images/Head.png" alt="Photo">
+          </div>
+          
+          <div class="text info">
+            <h1>Assoc Prof Yi Tang</h1>
+            <p>
+              <div>Associate Chair (Graduate Studies)</div>
+              <div>Director of Laboratory for Electrification</div>
+              <div>& Advanced Power Conversion</div>
+              <div>EEE, NTU</div>
 
-        <!-- 中：姓名 + 职务 + 联系方式 + 学术链接 -->
-        <div class="heading-main">
-
-          <h1>Assoc Prof Yi Tang</h1>
-
-          <div class="position-block">
-            <div>Associate Chair (Graduate Studies)</div>
-            <div>Director of Laboratory for Electrification</div>
-            <div>&amp; Advanced Power Conversion</div>
-            <div>EEE, NTU</div>
+              <div style="margin-top: 1em;">Office: <a href="https://maps.ntu.edu.sg/#/ntu/d386ffa80e4e46f286d17f08/poi/search">S2 B2A 07</a></div>
+              <div>Email: yitang@ntu.edu.sg</div>
+            </p>
+            <p>
+              <span><a href="https://scholar.google.com/citations?user=xehFzM8AAAAJ">Google Scholar</a></span> / 
+              <span><a href="https://orcid.org/0000-0001-8725-1336">ORCID</a></span> /
+              <span><a href="https://dr.ntu.edu.sg/entities/person/Tang-Yi">NTU Profiles</a></span>
+            </p>
           </div>
 
-          <div class="contact-block">
-            <div>
-              Office:
-              <a href="https://maps.ntu.edu.sg/#/ntu/d386ffa80e4e46f286d17f08/poi/search">S2 B2A 07</a>
+          <div class="text" style="margin-top: -3em;">
+            <div class="title">Related Links</div>
+            <ul style="list-style-type: square;">
+              <li><a href="https://www.ntu.edu.sg/">Nanyang Technological University (NTU)</a></li>
+              <li><a href="https://www.ntu.edu.sg/eee/">School of Electrical and Electronic Engineering (EEE)</a></li>
+              <li><a href="https://www.ieee-pels.org/">IEEE Power Electronics Society (PELS)</a></li>
+            </ul>
+          </div>
+
+          <div class="text">
+            <p>
+            Dr. Yi Tang received the B.Eng. Degree in electrical engineering from Wuhan University, Wuhan, China, in 2007 and the  M.Sc. And Ph.D. degrees in power engineering from the School of Electrical and Electronic Engineering, Nanyang  Technological University, Singapore, in 2008 and 2011, respectively.</p>
+
+            <p>
+            From 2011 to 2013, he was a Senior Application Engineer with Infineon Technologies Asia Pacific, Singapore. From 2013 to 2015, he was a Postdoctoral Research Fellow with Aalborg University, Aalborg, Denmark. Since March 2015, he has been with Nanyang Technological University, Singapore, where he is now a tenured Associate Professor. He is the Cluster Director of the advanced power electronics research program at the Energy Research Institute @NTU (ERI@N).</p>
+
+
+            <p>
+            Dr. Tang received the Infineon Top Inventor Award in 2012, the Early Career Teaching Excellence Award in 2017, and  multiple IEEE Prize Paper Awards. He serves as an Associate Editor for the IEEE Transactions on Power Electronics (TPEL)  and the  IEEE Journal of Emerging and Selected Topics in Power Electronics (JESTPE).</p>
+          </div>  
+        
+        <div class="content research anchor" id="research">
+         <div class="text">
+           <h1>Research</h1>
+           <p>Our research group studies <span class="highlight">power electronics</span> for electrification and advanced power conversion. We focus on the following research areas:</p>
+
+           <div class="title"><h2>Power-Electronics-Dominated Power Systems</h2></div> 
+            <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap; transform: scale(0.85);">
+              <span style="flex: 1; text-align: center; margin: 0 30px;">
+              <img class="img_responsive" src="images/Research_1.png" alt="Power-Electronics-Dominated Power Systems"/>
+              </span>
             </div>
-            <div>Email: yitang@ntu.edu.sg</div>
-          </div>
 
-          <p class="profile-links">
-            <a href="https://scholar.google.com/citations?user=xehFzM8AAAAJ">Google Scholar</a> /
-            <a href="https://orcid.org/0000-0001-8725-1336">ORCID</a> /
-            <a href="https://dr.ntu.edu.sg/entities/person/Tang-Yi">NTU Profiles</a>
-          </p>
+            <ul style="list-style-type: square;">
+              <li>Hybrid AC/DC grid</a></li>
+              <li>Virtual inertia</a></li>
+              <li>Wide frequency oscillations</a></li>
+              <li>Grid-forming control</a></li>
+              <li>...</a></li>
+            </ul>
+
+            <div class="title"><h2>High-Efficiency High-Power-Density Converters</h2></div> 
+              <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap; transform: scale(0.85);">
+                <span style="flex: 1; text-align: center; margin: 0 30px;">
+                <img class="img_responsive" src="images/Research_2.png" alt="High-Efficiency High-Power-Density Converters"/>
+                </span>
+              </div>
+              <ul style="list-style-type: square;">
+                <li>DC-DC converter</a></li>
+                <li>T-Type inverter</a></li>
+                <li>GaN converter</a></li>
+              </ul>
+
+            <div class="title"><h2>Wireless Power Transfer</h2></div> 
+              <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap; transform: scale(0.85);">
+                <span style="flex: 1; text-align: center; margin: 0 30px;">
+                <img class="img_responsive" src="images/Research_3.png" alt="Wireless Power Transfer"/>
+                </span>
+              </div>
+              <ul style="list-style-type: square;">
+                <li>Advanced control and modulation</a></li>
+                <li>Precise dynamic modeling</a></li>
+                <li>Coil and magnetic core design</a></li>
+              </ul>
+
+              <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap; transform: scale(0.9);">
+                <span style="flex: 1; text-align: center; margin: 0 30px;">
+                 <img class="img_responsive" src="images/Device.jpg" alt="Laboratory equipment"/>
+                </span>
+              </div>
+         </div>
         </div>
 
-        <!-- 右：Related Links -->
-        <div class="heading-links">
-          <h2 class="heading-links-title">Related Links</h2>
-          <ul>
-            <li><a href="https://www.ntu.edu.sg/">Nanyang Technological University (NTU)</a></li>
-            <li><a href="https://www.ntu.edu.sg/eee/">School of Electrical and Electronic Engineering (EEE)</a></li>
-            <li><a href="https://www.ieee-pels.org/">IEEE Power Electronics Society (PELS)</a></li>
-          </ul>
-        </div>
+        
+          
+        
 
-      </div> <!-- /home -->
-
-      <!-- Research -->
-      <div class="content research anchor" id="research">
-        <div class="text">
-          <h1>Research</h1>
-          <p>
-            Our research group studies <span class="highlight">power electronics</span> for electrification and advanced power conversion. We focus on the following research areas:
-          </p>
-
-          <div class="title">
-            <h2>Power-Electronics-Dominated Power Systems</h2>
-          </div>
-          <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap; transform: scale(0.85);">
-            <span style="flex: 1; text-align: center; margin: 0 30px;">
-              <img class="img_responsive" src="images/Research_1.png" alt="Power-Electronics-Dominated Power Systems" />
-            </span>
-          </div>
-
-          <ul style="list-style-type: square;">
-            <li>Hybrid AC/DC grid</li>
-            <li>Virtual inertia</li>
-            <li>Wide frequency oscillations</li>
-            <li>Grid-forming control</li>
-            <li>...</li>
-          </ul>
-
-          <div class="title">
-            <h2>High-Efficiency High-Power-Density Converters</h2>
-          </div>
-          <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap; transform: scale(0.85);">
-            <span style="flex: 1; text-align: center; margin: 0 30px;">
-              <img class="img_responsive" src="images/Research_2.png" alt="High-Efficiency High-Power-Density Converters" />
-            </span>
-          </div>
-          <ul style="list-style-type: square;">
-            <li>DC-DC converter</li>
-            <li>T-Type inverter</li>
-            <li>GaN converter</li>
-          </ul>
-
-          <div class="title">
-            <h2>Wireless Power Transfer</h2>
-          </div>
-          <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap; transform: scale(0.85);">
-            <span style="flex: 1; text-align: center; margin: 0 30px;">
-              <img class="img_responsive" src="images/Research_3.png" alt="Wireless Power Transfer" />
-            </span>
-          </div>
-          <ul style="list-style-type: square;">
-            <li>Advanced control and modulation</li>
-            <li>Precise dynamic modeling</li>
-            <li>Coil and magnetic core design</li>
-          </ul>
-
-          <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap; transform: scale(0.9);">
-            <span style="flex: 1; text-align: center; margin: 0 30px;">
-              <img class="img_responsive" src="images/Device.jpg" alt="Laboratory equipment" />
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Publications -->
-      <div class="content publications anchor" id="publications">
+        <div class="content publications anchor" id="publications"></div>
         <div class="text">
           <h1>Publications</h1>
-          <div>
-            The recent selected publications are listed below. For more publications, please visit
-            <a href="https://scholar.google.com/citations?user=xehFzM8AAAAJ">Google Scholar</a> and
-            <a href="https://ieeexplore.ieee.org/author/37403083500">IEEE Xplore.</a>
-          </div>
+          <div>The recent selected publications are listed below. For more publications, please visit <a href="https://scholar.google.com/citations?user=xehFzM8AAAAJ">Google Scholar</a> and <a href="https://ieeexplore.ieee.org/author/37403083500">IEEE Xplore.</a></div>
           <ul style="list-style-type: square;">
-            <li>
-              F. Deng et al., "Event-Triggered Differential Delay Method for Current Sharing in Islanded DC Microgrids With Adaptive Droop Coefficient Regulation," in <em>IEEE Transactions on Smart Grid</em>, doi: 10.1109/TSG.2024.3472694.
+            <li>F. Deng et al., "Event-Triggered Differential Delay Method for Current Sharing in Islanded DC Microgrids With Adaptive Droop Coefficient Regulation," in <em>IEEE Transactions on Smart Grid</em>, doi: 10.1109/TSG.2024.3472694.
             </li>
 
-            <li>
-              Z. Yao, X. He, M. Liu, J. Liu, Z. Xiao and Y. Tang, "Fixed Switching Frequency Control Using Trapezoidal Current Mode to Achieve ZVS in Three-Level DC–DC Converters," in <em>IEEE Transactions on Industrial Electronics</em>, doi: 10.1109/TIE.2024.3454707.
+            <li>Z. Yao, X. He, M. Liu, J. Liu, Z. Xiao and Y. Tang, "Fixed Switching Frequency Control Using Trapezoidal Current Mode to Achieve ZVS in Three-Level DC–DC Converters," in <em>IEEE Transactions on Industrial Electronics</em>, doi: 10.1109/TIE.2024.3454707.
             </li>
 
-            <li>
-              Z. Xiao, J. Wu, Z. He, Z. Yao and Y. Tang, "Optimal Switching Pattern Control of the CLLC Resonant Converters in Dynamic Processes," in <em>IEEE Transactions on Power Electronics</em>, vol. 39, no. 12, pp. 16268-16282, Dec. 2024, doi: 10.1109/TPEL.2024.3457899.
+            <li>Z. Xiao, J. Wu, Z. He, Z. Yao and Y. Tang, "Optimal Switching Pattern Control of the CLLC Resonant Converters in Dynamic Processes," in <em>IEEE Transactions on Power Electronics</em>, vol. 39, no. 12, pp. 16268-16282, Dec. 2024, doi: 10.1109/TPEL.2024.3457899.
             </li>
 
-            <li>
-              F. Deng, L. Zhang, Z. Xiao, Z. Yao and Y. Tang, "Decentralized Multilayer Master-Slave Control Strategy for Power Management in Autonomous DC Microgrid Clusters," in <em>IEEE Transactions on Industrial Electronics</em>, doi: 10.1109/TIE.2024.3443949.
+            <li>F. Deng, L. Zhang, Z. Xiao, Z. Yao and Y. Tang, "Decentralized Multilayer Master-Slave Control Strategy for Power Management in Autonomous DC Microgrid Clusters," in <em>IEEE Transactions on Industrial Electronics</em>, doi: 10.1109/TIE.2024.3443949. 
             </li>
 
-            <li>
-              Z. Xiao, X. Li and Y. Tang, "A Lightweight Artificial Neural Network Start-Up Controller for CLLC Resonant Converters," in <em>IEEE Transactions on Power Electronics</em>, vol. 39, no. 11, pp. 14775-14786, Nov. 2024, doi: 10.1109/TPEL.2024.3436847.
+            <li>Z. Xiao, X. Li and Y. Tang, "A Lightweight Artificial Neural Network Start-Up Controller for CLLC Resonant Converters," in <em>IEEE Transactions on Power Electronics</em>, vol. 39, no. 11, pp. 14775-14786, Nov. 2024, doi: 10.1109/TPEL.2024.3436847.
             </li>
 
-            <li>
-              Z. Yao, M. Liu, X. He, F. Deng, W. Chen and Y. Tang, "Single Sensor-Based Full-Range Voltage Balancing Method for Five-Level DC–DC Converters," in <em>IEEE Transactions on Power Electronics</em>, vol. 39, no. 9, pp. 10876-10886, Sept. 2024, doi: 10.1109/TPEL.2024.3408088.
+            <li>Z. Yao, M. Liu, X. He, F. Deng, W. Chen and Y. Tang, "Single Sensor-Based Full-Range Voltage Balancing Method for Five-Level DC–DC Converters," in <em>IEEE Transactions on Power Electronics</em>, vol. 39, no. 9, pp. 10876-10886, Sept. 2024, doi: 10.1109/TPEL.2024.3408088. 
             </li>
           </ul>
         </div>
-      </div>
+        
+        <div class="content people anchor" id="people">
+          <div class="text front">
+            <h1>People</h1>
+            <div class="title"><h2>Research Fellow</h2></div> 
+            <ul style="list-style-type: square;">
+              <li>Ziheng Xiao</a></li>
+              <li>Fei Deng</a></li>
+              <li>Zhigang Yao</a></li>
+              <li>Lei Zhang</a></li>
+              <li>Yongbin Jiang</a></li>
+            </ul>
 
-      <!-- People -->
-      <div class="content people anchor" id="people">
-        <div class="text front">
-          <h1>People</h1>
-
-          <div class="title">
-            <h2>Research Fellow</h2>
+            <div class="title"><h2>PhD Students</h2></div> 
+            <ul style="list-style-type: square;">
+              <li>Haoxin Yang</a></li>
+              <li>Yaohua Li</a></li>
+              <li>Tengfei Sun</a></li>
+              <li>Delin Zhao</a></li>
+              <li>Jingrui Liu</a></li>
+              <li>Yian Guo</a></li>
+              <li>Julian Chung Zhong Wei</a></li>
+            </ul>
+            
+            <div class="title"><h2>Alumni</h2></div> 
+            <ul class="alumni">
+              <li>Shuxin Chen (PhD 2020, Research Fellow 2022), Senior Engineer, Dyson</li>
+              <li><a href="http://faculty.hust.edu.cn/zhangli12345678/zh_CN/index/2437069/list/index.htm">Li Zhang</a> (Research Fellow 2022), Professor, Huazhong University of Science and Technology</li>
+              <li>Han Deng (PhD 2022), Senior Engineer, Huawei</li>
+              <li><a href="https://faculty.sdu.edu.cn/fangjingyang/zh_CN/index.htm">Jingyang Fang</a> (PhD 2018, Research Fellow 2019), Professor, Shandong University</li>
+            </ul>
           </div>
-          <ul style="list-style-type: square;">
-            <li>Ziheng Xiao</li>
-            <li>Fei Deng</li>
-            <li>Zhigang Yao</li>
-            <li>Lei Zhang</li>
-            <li>Yongbin Jiang</li>
-          </ul>
+        </div>
 
-          <div class="title">
-            <h2>PhD Students</h2>
+       <div class="content teaching anchor" id="teaching">
+          <div class="text front">
+            <h1>Teaching</h1>
+            <ul style="list-style-type: square;">
+              <li>EE4504: Design of Clean Energy Systems</li>
+              <li>EE6501: Power Electronic Converters</li>
+            </ul>
           </div>
-          <ul style="list-style-type: square;">
-            <li>Haoxin Yang</li>
-            <li>Yaohua Li</li>
-            <li>Tengfei Sun</li>
-            <li>Delin Zhao</li>
-            <li>Jingrui Liu</li>
-            <li>Yian Guo</li>
-            <li>Julian Chung Zhong Wei</li>
-          </ul>
+        </div>
 
-          <div class="title">
-            <h2>Alumni</h2>
+        <div class="content photo anchor" id="photo">
+          <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <h1 style="display: block; width: 100%; text-align: left; margin-bottom: 10px;">Photo Gallery</h1>
+            <span style="flex-basis: 30%; text-align: center; margin: 10px;">
+              Team bonding activity - 2024
+             <img class="img_responsive" src="images/Team bonding activity_2024.jpg" alt="Team bonding activity"/>
+            </span>
+            <span style="flex-basis: 30%; text-align: center; margin: 10px;">
+              Team bonding dinner - 2024
+              <img class="img_responsive" src="images/Team bonding dinner_2024.jpg" alt="Team bonding dinner"/>
+            </span>
+            <span style="flex-basis: 30%; text-align: center; margin: 10px;">
+              Team bonding activity - 2022
+              <img class="img_responsive" src="images/Team bonding activity_2022.jpg" alt="Team bonding activity"/>
+            </span>
+
+            <span style="flex-basis: 30%; text-align: center; margin: 10px;">
+              Assoc. Prof. Sun Kai - 2024
+              <img class="img_responsive" src="images/Sun Kai.jpg" alt="Visiting guest"/>
+            </span>
+
+            <span style="flex-basis: 30%; text-align: center; margin: 10px;">
+              Prof. Frede Blaabjerg - 2023
+              <img class="img_responsive" src="images/Frede Blaabjerg.jpg" alt="Visiting guest"/>
+            </span>
+
+            <span style="flex-basis: 30%; text-align: center; margin: 10px;">
+              Prof. Leo Lorenz - 2023
+              <img class="img_responsive" src="images/Leo Lorenz.jpg" alt="Visiting guest"/>
+            </span>
           </div>
-          <ul class="alumni">
-            <li>Shuxin Chen (PhD 2020, Research Fellow 2022), Senior Engineer, Dyson</li>
-            <li>
-              <a href="http://faculty.hust.edu.cn/zhangli12345678/zh_CN/index/2437069/list/index.htm">Li Zhang</a> (Research Fellow 2022), Professor, Huazhong University of Science and Technology
-            </li>
-            <li>Han Deng (PhD 2022), Senior Engineer, Huawei</li>
-            <li>
-              <a href="https://faculty.sdu.edu.cn/fangjingyang/zh_CN/index.htm">Jingyang Fang</a> (PhD 2018, Research Fellow 2019), Professor, Shandong University
-            </li>
-          </ul>
         </div>
-      </div>
 
-      <!-- Teaching -->
-      <div class="content teaching anchor" id="teaching">
-        <div class="text front">
-          <h1>Teaching</h1>
-          <ul style="list-style-type: square;">
-            <li>EE4504: Design of Clean Energy Systems</li>
-            <li>EE6501: Power Electronic Converters</li>
-          </ul>
+
+        <div class="content photo anchor" id="photo">
+          <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <h1 style="display: block; width: 100%; text-align: left; margin-bottom: 20px;">Research Sponsors</h1>
+            <span style="flex: 1; text-align: center; margin: 0 10px;">
+             <img class="img_responsive" src="images/Sponsors.jpg" alt="Research Sponsors"/>
+            </span>
+          </div>
         </div>
-      </div>
 
-      <!-- Photo Gallery -->
-      <div class="content photo anchor" id="photo">
-        <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-          <h1 style="display: block; width: 100%; text-align: left; margin-bottom: 10px;">Photo Gallery</h1>
 
-          <span style="flex-basis: 30%; text-align: center; margin: 10px;">
-            Team bonding activity - 2024
-            <img class="img_responsive" src="images/Team bonding activity_2024.jpg" alt="Team bonding activity" />
-          </span>
+      </div> <!-- container -->
+    </div> <!-- outer container -->
 
-          <span style="flex-basis: 30%; text-align: center; margin: 10px;">
-            Team bonding dinner - 2024
-            <img class="img_responsive" src="images/Team bonding dinner_2024.jpg" alt="Team bonding dinner" />
-          </span>
 
-          <span style="flex-basis: 30%; text-align: center; margin: 10px;">
-            Team bonding activity - 2022
-            <img class="img_responsive" src="images/Team bonding activity_2022.jpg" alt="Team bonding activity" />
-          </span>
 
-          <span style="flex-basis: 30%; text-align: center; margin: 10px;">
-            Assoc. Prof. Sun Kai - 2024
-            <img class="img_responsive" src="images/Sun Kai.jpg" alt="Visiting guest" />
-          </span>
+    <script>showPubs(0);</script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
 
-          <span style="flex-basis: 30%; text-align: center; margin: 10px;">
-            Prof. Frede Blaabjerg - 2023
-            <img class="img_responsive" src="images/Frede Blaabjerg.jpg" alt="Visiting guest" />
-          </span>
+  </body>
 
-          <span style="flex-basis: 30%; text-align: center; margin: 10px;">
-            Prof. Leo Lorenz - 2023
-            <img class="img_responsive" src="images/Leo Lorenz.jpg" alt="Visiting guest" />
-          </span>
-        </div>
-      </div>
-
-      <!-- Research Sponsors -->
-      <div class="content photo anchor">
-        <div class="text front" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-          <h1 style="display: block; width: 100%; text-align: left; margin-bottom: 20px;">Research Sponsors</h1>
-          <span style="flex: 1; text-align: center; margin: 0 10px;">
-            <img class="img_responsive" src="images/Sponsors.jpg" alt="Research Sponsors" />
-          </span>
-        </div>
-      </div>
-
-    </div> <!-- container -->
-  </div> <!-- outer container -->
-
-  <!-- 调用 Publications 函数 -->
-  <script>showPubs(0);</script>
-
-  <!-- 引入 SmoothScroll 库（恢复原版平滑滚动效果） -->
-  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
-
-  <!-- 初始化平滑滚动 -->
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 1000,
-      offset: 0
-    });
-  </script>
-
-</body>
-
-</html>
+</html> 
