@@ -70,41 +70,6 @@
       margin-top: 0.6em;
       margin-bottom: 0.6em;
     }
-
-    /* 首页 heading 区域整体：头像左，右侧信息列 */
-    .content.heading {
-      display: flex;
-      align-items: flex-start;
-    }
-
-    /* 头像右侧空一点 */
-    .content.heading .img {
-      margin-right: 24px;
-    }
-
-    /* 右侧整体占满剩余空间 */
-    .content.heading .info-wrapper {
-      flex: 1;
-    }
-
-    /* 名字+职务区块与下方 Related Links 间距稍微紧一点 */
-    .content.heading .info {
-      margin-bottom: 0.4em;
-    }
-
-    /* 首页里的 Related Links 标题更紧凑一些 */
-    .content.heading .related-links .title {
-      margin-top: 8px;
-      margin-bottom: 4px;
-      font-weight: 600;
-    }
-
-    /* Related Links 列表紧凑一些 */
-    .content.heading .related-links ul {
-      list-style-type: square;
-      margin: 0;
-      padding-left: 1.2em;
-    }
   </style>
 
   <!-- JS -->
@@ -119,49 +84,52 @@
   <div class="outercontainer">
     <div class="container body">
 
-      <!-- Home / Heading -->
-      <div class="content heading anchor" id="home">
-        <div class="img">
-          <img class="img_responsive" src="images/Head.png" alt="Photo">
-        </div>
+            <!-- Home / Heading -->
+            <div class="content heading anchor" id="home">
 
-        <!-- 右侧整体包一层，方便布局 -->
-        <div class="info-wrapper">
-
-          <!-- 中间部分：姓名 + 职务 + 学术链接 -->
-          <div class="text info">
-            <h1>Assoc Prof Yi Tang</h1>
-            <p>
-              <div>Associate Chair (Graduate Studies)</div>
-              <div>Director of Laboratory for Electrification</div>
-              <div>&amp; Advanced Power Conversion</div>
-              <div>EEE, NTU</div>
-
-              <div style="margin-top: 1em;">
-                Office:
-                <a href="https://maps.ntu.edu.sg/#/ntu/d386ffa80e4e46f286d17f08/poi/search">S2 B2A 07</a>
+              <!-- 左：头像 -->
+              <div class="heading-photo">
+                <img class="img_responsive" src="images/Head.png" alt="Photo">
               </div>
-              <div>Email: yitang@ntu.edu.sg</div>
-            </p>
-            <p>
-              <span><a href="https://scholar.google.com/citations?user=xehFzM8AAAAJ">Google Scholar</a></span> /
-              <span><a href="https://orcid.org/0000-0001-8725-1336">ORCID</a></span> /
-              <span><a href="https://dr.ntu.edu.sg/entities/person/Tang-Yi">NTU Profiles</a></span>
-            </p>
-          </div>
-
-          <!-- 右侧部分：Related Links 仍然在右侧，间距更紧 -->
-          <div class="text" style="float: right; width: 280px; margin-top: 5em; margin-left: 15px;">
-            <div class="title" style="margin-top: 0; margin-bottom: 5px; font-size: 18px;">Related Links</div>
-            <ul style="list-style-type: square; margin: 0; padding-left: 18px;">
-              <li><a href="https://www.ntu.edu.sg/">Nanyang Technological University (NTU)</a></li>
-              <li><a href="https://www.ntu.edu.sg/eee/">School of Electrical and Electronic Engineering (EEE)</a></li>
-              <li><a href="https://www.ieee-pels.org/">IEEE Power Electronics Society (PELS)</a></li>
-            </ul>
-          </div>
-
-        </div> <!-- info-wrapper -->
-      </div> <!-- home -->
+      
+              <!-- 中：姓名 + 职务 + 联系方式 + 学术链接 -->
+              <div class="heading-main">
+                <h1>Assoc Prof Yi Tang</h1>
+      
+                <div class="position-block">
+                  <div>Associate Chair (Graduate Studies)</div>
+                  <div>Director of Laboratory for Electrification</div>
+                  <div>&amp; Advanced Power Conversion</div>
+                  <div>EEE, NTU</div>
+                </div>
+      
+                <div class="contact-block">
+                  <div>
+                    Office:
+                    <a href="https://maps.ntu.edu.sg/#/ntu/d386ffa80e4e46f286d17f08/poi/search">S2 B2A 07</a>
+                  </div>
+                  <div>Email: yitang@ntu.edu.sg</div>
+                </div>
+      
+                <p class="profile-links">
+                  <span><a href="https://scholar.google.com/citations?user=xehFzM8AAAAJ">Google Scholar</a></span> /
+                  <span><a href="https://orcid.org/0000-0001-8725-1336">ORCID</a></span> /
+                  <span><a href="https://dr.ntu.edu.sg/entities/person/Tang-Yi">NTU Profiles</a></span>
+                </p>
+              </div>
+      
+              <!-- 右：Related Links -->
+              <div class="heading-links">
+                <h2 class="heading-links-title">Related Links</h2>
+                <ul>
+                  <li><a href="https://www.ntu.edu.sg/">Nanyang Technological University (NTU)</a></li>
+                  <li><a href="https://www.ntu.edu.sg/eee/">School of Electrical and Electronic Engineering (EEE)</a></li>
+                  <li><a href="https://www.ieee-pels.org/">IEEE Power Electronics Society (PELS)</a></li>
+                </ul>
+              </div>
+      
+            </div> <!-- /home -->
+      
 
       <!-- Research -->
       <div class="content research anchor" id="research">
